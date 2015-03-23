@@ -3,8 +3,8 @@ default: &default
 
 development:
   <<: *default
-  database: rails-template-01-development
+  database: rails-oo-polymorphism-development
 
 test:
   <<: *default
-  database: rails-template-01-test
+  database: rails-oo-polymorphism-test
