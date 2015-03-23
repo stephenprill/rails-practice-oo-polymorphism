@@ -3,7 +3,7 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
       t.string :url
       t.integer :created_by_id
-      t.timestamps null: false
+      t.datetime :published_at
     end
   end
 end

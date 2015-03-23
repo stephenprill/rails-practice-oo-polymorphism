@@ -6,7 +6,7 @@
   <div class="row activity-item">
     <div class="col-md-12">
       <i class="fa fa-user"></i>
-      <%= user.name %> was created on <%= user.created_at.strftime('%-m/%-d/%Y') %>
+      <%= user.full_name %> was created on <%= user.created_at.strftime('%-m/%-d/%Y') %>
     </div>
   </div>
 <% end %>
@@ -16,7 +16,7 @@
     <div class="col-md-12">
       <i class="fa fa-building-o"></i>
       <%= company.name %> was created by
-      <%= company.created_by.name %>
+      <%= company.created_by.full_name %>
       on <%= company.created_at.strftime('%-m/%-d/%Y') %>
     </div>
   </div>
@@ -26,8 +26,8 @@
   <div class="row activity-item">
     <div class="col-md-12">
       <i class="fa fa-picture-o"></i>
-      <%= photo.created_by.name %> uploaded a photo
-      on <%= photo.created_at.strftime('%-m/%-d/%Y') %>
+      <%= photo.created_by.full_name %> uploaded a photo
+      on <%= photo.published_at.strftime('%-m/%-d/%Y') %>
       <blockquote>
         <%= image_tag photo.url %>
       </blockquote>

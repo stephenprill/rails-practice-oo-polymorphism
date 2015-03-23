@@ -26,13 +26,12 @@ ActiveRecord::Schema.define(version: 20150323172734) do
   create_table "photos", force: :cascade do |t|
     t.string   "url"
     t.integer  "created_by_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "published_at"
   end
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
-    t.string   "name"
+    t.string   "full_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
